@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F5F5DC"
+        android:orientation="vertical"
+        android:padding="0dp">
+
+        <!-- Tytuł gry -->
+        <TextView
+            android:id="@+id/text_game_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#A52A2A"
+            android:text="Gra w kości. Autor 000000000"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:padding="8dp"
+            android:textStyle="bold" />
+        <Button
+            android:id="@+id/button_roll_dice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RZUĆ KOSCMI"
+            android:textColor="@color/white"
+            android:backgroundTint="#D2691E"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+        <LinearLayout
+            android:id="@+id/layout_dice_row"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#FFFFFF"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:gravity="center_horizontal"
+            android:weightSum="5">
+
+            <ImageView
+                android:id="@+id/dice1"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/question_dice"
+                android:layout_margin="9dp" />
+
+            <ImageView
+                android:id="@+id/dice2"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/question_dice"
+                android:layout_margin="9dp" />
+
+            <ImageView
+                android:id="@+id/dice3"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/question_dice"
+                android:layout_margin="9dp" />
+
+            <ImageView
+                android:id="@+id/dice4"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/question_dice"
+                android:layout_margin="9dp" />
+
+            <ImageView
+                android:id="@+id/dice5"
+                android:layout_width="0dp"
+                android:layout_height="60dp"
+                android:layout_weight="1"
+                android:src="@drawable/question_dice"
+                android:layout_margin="9dp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/text_roll_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wynik tego losowania:"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"/>
+
+        <TextView
+            android:id="@+id/text_game_result"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Wynik gry:"
+            android:layout_gravity="center_horizontal"
+            android:textSize="16sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="#000000"/>
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="RESETUJ WYNIK"
+            android:backgroundTint="#D2691E"
+            android:textColor="@color/white"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
